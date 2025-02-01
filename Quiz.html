@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Tupac Mag'</div>
+        <nav id="menu">
+          <a href="biographie.html">Biographie</a>
+          <a href="hits.html">Hits</a>
+          <a href="style.html">Style</a>
+          <a href="Quiz.html">Quiz</a>
+        </nav>
+     </header>
+<section id="quiz">
+    <h2>Es-tu compatible avec Tupac ?</h2>
+    <form id="quiz-form">
+      <h3>1. Quel accessoire est un must pour toi ?<h3>
+      <label><input type="radio" name="q1" value="Bandana"> Bandana</label> 
+      <label><input type="radio" name="q1" value="Casquette"> Casquette</label> 
+      <label><input type="radio" name="q1" value="Lunettes"> Lunettes de soleil</label> 
+      <label><input type="radio" name="q1" value="Chaine"> Chaine<label> 
+  
+      <h3>2. Quel mot te décrit le mieux ?</h3>
+      <label><input type="radio" name="q2" value="Créatif"> Créatif</label> 
+      <label><input type="radio" name="q2" value="Rebelle"> Rebelle</label> 
+      <label><input type="radio" name="q2" value="Loyal"> Loyal</label> 
+      <label><input type="radio" name="q2" value="Ambitieux"> Ambitieux</label> 
+  <div id="progress-ber-container">
+    <div id="progress-bar"></div>
+   </div>
+   
+     
+      <h3>3. Quel est ta couleur préférée ? <h3>
+      <label><input type="radio" name="q3" value="Rouge"> Rouge</label> 
+      <label><input type="radio" name="q3" value="Noir"> Noir</label>  
+      <label><input type="radio" name="q3" value="Blanc"> Blanc</label> 
+      <label><input type="radio" name="q3" value="Bleu"> Bleu</label> 
+     
+      <h3>4. Tu es plus du genre à ? <h3>
+        <label><input type="radio" name="q4" value="Aventure"> Aventure</label> 
+        <label><input type="radio" name="q4" value="Poèmes"> Poèmes</label>  
+      <label><input type="radio" name="q4" value="Valeurs"> Valeurs</label>  
+      <label><input type="radio" name="q4" value="Fete"> Fete</label> 
+  
+      <h3>5. Qu'elle type de musique écoutes tu ? <h3>
+      <label><input type="radio" name="q5" value="Rap"> Rap</label> 
+      <label><input type="radio" name="q5" value="R&B"> R&B</label>    
+      <label><input type="radio" name="q5" value="Rock"> Rock</label>    
+      <label><input type="radio" name="q5" value="Pop"> Pop</label> 
+  
+      <button type="submit" id="submit-quiz">Voir le résultat</button>
+     </form>
+     <div id="quiz-result"></div>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>
