@@ -24,7 +24,7 @@ header {
 }
 
 header h1 {
-    font-size: 2.5em;
+    font-size: 2em;
     text-transform: uppercase;
     color: #8c02d7;
     letter-spacing: 2px;
@@ -50,12 +50,25 @@ nav a:hover {
 }
 
 section {
-    max-width: 800px;
+    max-width: 70%;
     margin: 20px auto;
     padding: 20px;
     background: #1a1a1a;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(140, 2, 215);
+}
+
+#accueil {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+a {
+    color: #8c02d7;
+    text-decoration: none;
 }
 
 h2 {
@@ -71,6 +84,35 @@ p {
     margin-bottom: 15px;
 }
 
+.biographie-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.biographie-container img {
+    width: 450px;
+    height: 350px;
+    margin: 10px;
+    border-radius: 8px;
+}
+#style img {
+    width: 450px;
+    height: 350px;
+    margin: 10px;
+    border-radius: 8px;
+}
+.biographie-container p {
+    font-size: 1.1em;
+    margin: 10px;
+}
+
+#biographie h3 {
+    color: #8c02d7;
+    border-bottom: 2px solid #8c02d7;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
 img {
     width: 100%;
     border-radius: 8px;
@@ -87,10 +129,133 @@ ul li::before {
     margin-right: 10px;
 }
 
+.hit-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    gap: 20px;
+}
+
+.look {
+    display: flex;
+    align-items: center; 
+    gap: 40px; 
+    justify-content: space-around;
+    border-bottom: 2px solid #8c02d7;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.look-img {
+    width: 250px; 
+    height: auto;
+    border-radius: 10px; 
+}
+
+.look-text {
+    max-width: 500px; /* Largeur max du texte */
+}
+
+button#submit-quiz {
+    background-color: #8c02d7;
+    padding: 10px;
+}
+
+
+/* Style général du quiz */
+#quiz {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #1a1a1a;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(140, 2, 215, 0.8);
+    text-align: center;
+}
+
+#quiz h2 {
+    color: #8c02d7;
+    border-bottom: 2px solid #8c02d7;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+/* Style des questions */
+#quiz-form h3 {
+    color: #fff;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+#quiz-form label {
+    display: block;
+    background: #222;
+    color: #fff;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+#quiz-form label:hover {
+    background: #8c02d7;
+}
+
+/* Style des inputs radio */
+#quiz-form input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Style du bouton de soumission */
+#submit-quiz {
+    background-color: #8c02d7;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background 0.3s;
+}
+
+#submit-quiz:hover {
+    background-color: #6a009d;
+}
+
+/* Style de la barre de progression */
+#progress-ber-container {
+    width: 100%;
+    background: #222;
+    border-radius: 5px;
+    height: 10px;
+    margin: 15px 0;
+    overflow: hidden;
+}
+
+#progress-bar {
+    width: 0%;
+    height: 100%;
+    background: #8c02d7;
+    transition: width 0.5s ease-in-out;
+}
+
+/* Style du résultat du quiz */
+#quiz-result {
+    margin-top: 20px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+
 footer {
     text-align: center;
     margin-top: 30px;
-    padding: 15px;
+
     background: #000;
     color: #fff;
 }
